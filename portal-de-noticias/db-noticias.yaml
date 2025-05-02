@@ -8,12 +8,8 @@ spec:
   containers:
     - name: mysql
       image: mysql:8.0
-      env:
-      - name: MYSQL_ROOT_PASSWORD
-        value: q1w2e3r4
-      - name: MYSQL_DATABASE
-        value: empresa
-      - name: MYSQL_PASSWORD
-        value: q1w2e3r4
       ports:
       - containerPort: 3306
+      envFrom:
+        - configMapRef:
+            name: db-configmap

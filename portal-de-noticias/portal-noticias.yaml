@@ -8,3 +8,6 @@ spec:
   containers:
     - name: portal-noticias-container
       image: wesleyfeitosa/portal-noticias:latest
+      envFrom:
+        - configMapRef:
+            name: portal-configmap

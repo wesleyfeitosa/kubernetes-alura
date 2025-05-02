@@ -2,9 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
+  - db-configmap.yaml
   - db-noticias.yaml
-  - portal-noticias.yaml
+  - sistema-configmap.yaml
   - sistema-noticias.yaml
+  - portal-configmap.yaml
+  - portal-noticias.yaml
   - svc-db-noticias.yaml
   - svc-portal-noticias.yaml
   - svc-sistema-noticias.yaml
