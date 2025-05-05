@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-news-configmap
+data:
+  POSTGRES_USER: admin
+  POSTGRES_PASSWORD: q1w2e3r4
+  POSTGRES_DB: news
